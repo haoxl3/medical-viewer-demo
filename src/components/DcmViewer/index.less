@@ -1,0 +1,27 @@
+@import '../../vars.less';
+.niiViewContainer {
+    color: #fff;
+    display: flex;
+    height: 100%;
+    .flexItem {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        > div {
+            flex: 1;
+        }
+        .canvasBox {
+            position: relative;
+            padding: @primaryPadding;
+            .sliceType {
+                position: absolute;
+                top: @primaryPadding;
+                left: @primaryPadding;
+                background-color: @themeColor;
+                color: #fff;
+                padding: 2px 4px;
+                z-index: 1;
+            }
+        }
+    }
+}

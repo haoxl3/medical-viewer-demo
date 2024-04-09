@@ -1,0 +1,27 @@
+@import '../../vars.less';
+.labelContainer {
+    position: relative;
+    padding-top: 25px;
+    height: 100%;
+    .labelHeaderBox {
+        padding-left: 30px;
+        display: flex;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        > span {
+            flex: 1;
+            text-align: center;
+            padding: 4px 0;
+            cursor: pointer;
+            &:hover,
+            &.active {
+                background-color: @themeColor;
+            }
+        }
+    }
+    .footerBox {
+        position: absolute;
+        bottom: 8px;
+    }
+}

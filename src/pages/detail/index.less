@@ -1,0 +1,39 @@
+@import '../../vars.less';
+.detailContainer {
+    background-color: #000;
+    height: 100%;
+    .contentContainer {
+        display: flex;
+        height: calc(100% - @headerHeight);
+    }
+    .leftContainer,
+    .rightContainer {
+        width: @leftMinWidth;
+        height: 100%;
+        padding: @primaryPadding;
+        position: relative;
+    }
+    .centerContainer {
+        flex: 1;
+    }
+    .leftContainer {
+        border-right: 1px solid @themeColor;
+    }
+    .rightContainer {
+        border-left: 1px solid @themeColor;
+    }
+    .leftIconBox {
+        cursor: pointer;
+        text-align: right;
+    }
+    .rightIconBox {
+        cursor: pointer;
+        text-align: left;
+        position: absolute;
+        z-index: 1;
+        padding: 4px;
+    }
+    .unfold {
+        width: @leftMaxWidth;
+    }
+}

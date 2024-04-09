@@ -1,0 +1,1 @@
+export const URLPREFIX = 'nifti:';
